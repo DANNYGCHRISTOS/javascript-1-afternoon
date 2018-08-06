@@ -6,8 +6,8 @@
 //plus the value of the name parameter.
 
 //Code here
-function greeting(name){
-  return "hello"+name;
+  function greeting(name){
+  return "Hello," +name;
 };
 
 //////////////////PROBLEM 2////////////////////
@@ -16,7 +16,7 @@ function greeting(name){
 //Name it newGreeting.
 
 //Code Here
-var newGreeting=function(name){
+ function newGreeting(name){
   return "Hello, " + name;
   };
 
@@ -26,8 +26,8 @@ var newGreeting=function(name){
 //Name it finalGreeting.
 
 //Code Here
-var finalGreeting=(num)=>{
-  return "hello"+name;
+var finalGreeting=(name)=>{
+  return "hello" +name;
 }
 
 //////////////////PROBLEM 4////////////////////
@@ -47,10 +47,12 @@ function doubleCheck(array)
 
 //Code Here
 function doubleCheck(array)
+{
 for(var i=0;i<array.length;i++)
 if(array[i]!=="chocolate"){
   array.push("chocolate");
   return array;
+}
 }
 
 //////////////////PROBLEM 5////////////////////
@@ -61,7 +63,7 @@ if(array[i]!=="chocolate"){
 //and goodBoy (a boolean).
 
 //Code Here
-var dog {
+var dog={
 name:"spy",
 color:"white",
 age:3,
@@ -79,7 +81,7 @@ var devMountainClassPet =dog.name;
 
 //Code Here
 dog.bark=function(){
-  return "woof woof"
+  return "woof woof";
 };
 //Store the result of invoking the bark method in a variable called ruff.
 
@@ -99,6 +101,7 @@ var ruff=dog.bark;
 
 //Code Here
 function looper(array)
+{
 var mySum=0;
 for(var i=0;i<array.length;i++)
 if((array[i]!==0)||(array[i]>=100)){}
@@ -192,11 +195,11 @@ return "Daniel";
 //Now save the result of invoking outerFn into a variable called innerFn.
 
 //Code Here
-var outerFn = () => {
-  return () => 'Emily';
+var innerFn= outerFn = () => {
+  return () => 'Daniel';
 };
 
 //Now invoke innerFn and save the result to a variable called finalResult.
 
 //Code Here
-outerFn()();
+var finalResult=outerFn()();
